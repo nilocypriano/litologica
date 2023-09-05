@@ -1,50 +1,129 @@
-img.slide-img {
+.product {
+  width: 336px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container > .product-card:not(:first-child):not(:last-child) {
+  margin: 0 42px;
+}
+.product-container > .product-card:first-child {
+  margin-right: 45px;
+}
+.product-container > .product-card:last-child {
+  margin-right: 0;
+  margin-left: 45px;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  /* margin-right: 50px; */
+  /* background-color: aliceblue; */
+}
+
+.product-thumb {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 216px;
-  min-width: 216px;
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
 }
-.carousel {
-  margin: 5rem !important;
-  max-width: 100px;
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
-}
-
-.swiper {
-  height: auto;
-  width: 1108px;
-}
-
-.swiper-slide {
-  text-align: center;
-  display: flex !important;
   align-items: center;
-  justify-content: center;
-  padding: 0 3rem;
+  background-color: #fff;
 }
 
-div.swiper-slide.swiper-slide-active {
-  display: flex !important;
+.pre-btn img,
+.nxt-btn img {
+  transition: 100ms;
+  opacity: 0.8;
 }
-
-.swiper-button-next,
-.swiper-button-prev {
-  color: #17324b !important;
-  font-weight: 900 !important;
+.pre-btn img:hover,
+.nxt-btn img:hover {
+  opacity: 1;
 }
-.swiper-button-next {
-  right: 0 !important;
-  left: auto !important;
+.pre-btn {
+  left: 0;
 }
-.swiper-button-prev {
-  right: auto !important;
-  left: 0 !important;
+.nxt-btn {
+  right: 0;
 }
-@media (max-width: 450px) {
-  .swiper {
-    width: 352px;
-    height: 270px;
+@media (min-width: 999px) {
+  .product {
+    width: 1000px;
   }
+
+  .product-container {
+    padding: 0 6vw;
+  }
+
+  .product-card {
+    width: unset;
+  }
+  .product-container > .product-card:first-child {
+    margin-left: 0.5rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .product {
+    width: 1240px;
+  }
+
+  .product-container {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .product-card {
+    width: unset;
+  }
+  .product-container > .product-card:not(:first-child):not(:last-child) {
+    margin: 0 2rem;
+  }
+
+  .product-container > .product-card:first-child {
+    margin: 0 2rem 0 4rem;
+  }
+  .product-container > .product-card:last-child {
+    margin-right: 0;
+    margin: 0 4rem 0 2rem;
+  }
+  .pre-btn,
+  .nxt-btn {
+    /* background-color: #fff; */
+  }
+  /* .pre-btn {
+    left: 2px;
+  }
+  .nxt-btn {
+    right: 2px;
+  } */
 }

@@ -1,179 +1,60 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat" !important;
 }
 
-.parceiros {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#banner-mobile {
-  max-width: unset;
-  margin-bottom: 2rem;
-}
-
-figure {
-  width: 100%;
-  height: auto;
-  min-height: 180px;
+figure.banner-box {
+  margin-top: 3rem;
 }
 .banner {
-  width: 116%;
-  height: 200px;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: nowrap;
-  margin-left: -60px;
-}
-
-.banner > img#banner {
-  opacity: unset !important;
-}
-
-p,
-p > strong,
-li.local {
-  font-size: 20px;
-}
-
-article.compromisso {
   width: 100%;
-}
-
-.somos-a-litologica {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.somos-a-litologica > h1 {
-  margin-bottom: 2rem;
-}
-p.compromisso {
-  width: 100%;
-  padding: 3rem 2rem;
-  background-color: #17324b;
-  color: #fff;
-  border-radius: 50px 0;
-  margin: 2.5rem 0;
-}
-
-p.compromisso > strong {
-  color: #fff;
-}
-
-p.compromisso-sem-background {
-  width: 80%;
-  margin: 0 auto;
-}
-
-article.localidades {
-  margin: 2rem 0;
-}
-
-p.localidades {
-  width: 80%;
-  margin: 0 auto;
-}
-
-h1,
-h2 {
-  font-weight: 500 !important;
-  font-size: 2rem !important;
-  text-transform: uppercase;
-  margin: 0;
-}
-strong {
-  font-weight: 900;
-}
-ul.local {
-  list-style: none; /* Remove default bullets */
-  font-family: Montserrat, "sans-serif";
-  margin: 2rem 0;
-}
-
-ul li.local {
-  margin: 0.25rem 0;
-}
-
-* {
-  color: #17324b;
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
-}
-
-ul li.local::before {
-  width: 67px !important;
-  height: 13px;
-  background-color: #17324b;
-  border-radius: 0 0 50px 0;
-  content: " "; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: red; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  margin-left: -3rem; /* Also needed for space (tweak if needed) */
-  margin-right: 20px;
-}
-div.integrante {
-  margin: 4rem 0;
-}
-section.time {
-  width: 264px;
+  margin: 2rem 0 6rem 0;
+  text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  color: #17324b;
+}
+
+h1.title-somos-litologica {
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline;
   margin: 0 auto;
 }
-.moldura {
-  width: 264px;
-  height: 253px;
-  border-radius: 50px 0;
-  background-color: #17324b;
-  margin: 1rem auto;
+
+strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.nome,
-.sobrenome,
-.cargo {
+.clientes {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h3.title-nossos-clientes {
+  font-size: 30px !important;
+  margin-bottom: 0 auto 40px auto;
   text-transform: uppercase;
+  font-weight: 400 !important;
+  margin: 0 auto;
+  color: #17324b;
 }
 
-.nome {
-  font-weight: 500;
-}
-
-.sobrenome {
+b {
+  /* margin-left: 0.8rem; */
   font-weight: 900;
 }
 
-.cargo {
-  font-weight: 700;
-}
-
-article.integrante > p {
-  font-weight: 24px;
-  margin: 0;
-}
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-p.localidades > br {
+#banner-desktop {
   display: none;
 }
 
@@ -182,114 +63,30 @@ p.localidades > br {
   width: 100%;
 }
 
-#banner-desktop {
-  display: none;
-}
-@media (min-width: 980px) {
-  #banner-mobile {
-    display: none;
+@media (min-width: 715px) {
+  h1.title-somos-litologica {
+    font-size: 4rem;
   }
-
-  #banner-desktop {
-    display: block;
-    width: 100%;
-  }
-  h1 {
-    margin-top: 3rem !important;
-    font-size: 40px !important;
-  }
-
-  h2 {
+  h3.title-nossos-clientes {
     font-size: 48px !important;
-    margin-bottom: 1.5rem !important;
+    font-family: "Montserrat" !important;
   }
 
-  p,
-  p > strong,
-  span {
-    font-size: 32px;
-  }
-
-  article.compromisso,
-  article.localidades {
-    margin: 2rem auto;
-    /* text-align: center; */
-  }
-
-  article.somos-a-litologica,
-  article.compromisso,
-  p.compromisso-sem-background,
-  p.localidades {
-    width: 940px;
-  }
-
-  article.compromisso {
-    margin: 3rem auto;
-  }
-
-  p.localidades > br {
-    display: block;
-  }
-
-  ul.local {
-    margin: 3rem 0;
-  }
-
-  p.localidades,
-  ul li.local {
-    font-weight: 500;
-  }
-
-  ul li.local {
-    margin: 1rem 0;
-    font-weight: 500;
+  strong {
     font-size: 2rem;
   }
 
-  ul li.local::before {
-    width: 226px !important;
-    height: 28px;
-    margin-right: 24px;
+  .banner {
   }
-
-  section.time {
-    width: 1040px;
-    margin: 7rem auto 0;
+  #banner-desktop {
+    display: block;
+    width: 100%;
+    max-width: 1360px;
+    height: auto;
+    max-height: 270px;
+    margin: 0 auto;
   }
-  div.integrante {
-    display: flex;
-    height: 300px;
-    align-items: center;
-  }
-  div.moldura {
-    width: 306px;
-    height: 300px;
-    margin: 0;
-  }
-
-  article.integrante {
-    font-size: 24px;
-    margin-left: 2rem;
-  }
-
-  div.integrante.reverse {
-    flex-direction: row-reverse;
-    text-align: end;
-    margin-top: 6rem;
-  }
-
-  div.integrante.reverse > article.integrante {
-    margin: 0 2rem 0 0;
-  }
-
-  .parceiros {
-    padding: 5rem 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  ul.local {
-    margin: 3rem auto;
-    width: 1270px;
+  #banner-mobile {
+    display: none;
   }
 }
