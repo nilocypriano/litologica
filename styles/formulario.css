@@ -141,6 +141,9 @@ span.whatsapp-mob {
     padding: 4rem 0;
   }
 
+  section.contato {
+    width: 990px;
+  }
   .orcamento {
     /* width: 54%; */
     /* white-space: nowrap;
