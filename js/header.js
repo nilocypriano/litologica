@@ -11,9 +11,13 @@
   menuOverlay.addEventListener("click", toggleNav);
 
   menuOverlay.addEventListener("click", () => {
-    alert("click");
+    navMenu.classList.toggle("open");
+    menuOverlay.classList.toggle("active");
+    document.body.classList.toggle("hidden-scrolling");
   });
 
+  menuOverlay.addEventListener("touchstart", toggleNav());
+  menuOverlay.addEventListener("touchmove", toggleNav());
   function toggleNav() {
     navMenu.classList.toggle("open");
     menuOverlay.classList.toggle("active");
@@ -39,7 +43,7 @@
         // expand new menuItemHasChildren
         menuItemHasChildren.classList.add("active");
         const subMenu = menuItemHasChildren.querySelector(".sub-menu");
-        subMenu?.style.maxHeight = subMenu?.scrollHeight + "px";
+        subMenu.style.maxHeight = subMenu?.scrollHeight + "px";
       }
     }
   });
