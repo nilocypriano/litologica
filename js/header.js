@@ -39,17 +39,17 @@
         // expand new menuItemHasChildren
         menuItemHasChildren.classList.add("active");
         const subMenu = menuItemHasChildren.querySelector(".sub-menu");
-        subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+        subMenu?.style.maxHeight = subMenu?.scrollHeight + "px";
       }
     }
   });
   function collapseSubMenu() {
     navMenu
       .querySelector(".menu-item-has-children.active .sub-menu")
-      .removeAttribute("style");
+      ?.removeAttribute("style");
     navMenu
       .querySelector(".menu-item-has-children.active")
-      .classList.remove("active");
+      ?.classList.remove("active");
   }
   function resizeFix() {
     // if navMenu is open ,close it
