@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <header class="header">
@@ -47,9 +48,9 @@
                   >Serviços <i class="plus"></i
                 ></a>
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#pocos-artesianos">poços artesianos</a></li>
-                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#mineracao">mineração</a></li>
-                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#mais-servicos">mais serviços</a></li>
+                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#pocos-artesianos" class="img-item">poços artesianos</a></li>
+                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#mineracao" class="img-item">mineração</a></li>
+                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#mais-servicos" class="img-item">mais serviços</a></li>
                 </ul>
               </li>
               <li class="menu-item">
@@ -118,5 +119,14 @@
     </footer>
   </main>
 <script src="../../js/header.js"></script>
-  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+$(document).ready(function() {
+ 
+ $(".owl-carousel").owlCarousel();
+
+});
+</script> 
+</body>
 </html>
