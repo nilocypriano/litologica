@@ -18,6 +18,7 @@
 
 .container-background {
   background-color: #17324b;
+  border-radius: 50px 0 0 0;
 }
 
 .moldura {
@@ -51,6 +52,8 @@ h2.title-slider-servico {
   text-transform: uppercase;
   font-weight: 900;
   padding: 2rem 0;
+  font-size: 20px;
+  line-height: 24.38px;
 }
 h3.title-conheca-servico {
   margin: 1rem 0;
