@@ -52,7 +52,10 @@
           <!-- navigation menu start -->
           <nav class="nav-menu">
             <ul class="menu">
-              <li class="menu-item menu-item-has-children">
+              <!-- <li class="menu-item">
+                <a href="../../index.html">Home</a>
+              </li> -->
+              <li class="menu-item">
                 <a href="#" data-toggle="sub-menu">Home</a>
               </li>
               <li class="menu-item">
@@ -66,9 +69,21 @@
                   >Serviços <i class="plus"></i
                 ></a>
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="#">poços artesianos</a></li>
-                  <li class="menu-item"><a href="#">mineração</a></li>
-                  <li class="menu-item"><a href="#">mais serviços</a></li>
+                  <li class="menu-item">
+                    <a href="./pages/servicos/servicos.html#pocos-artesianos"
+                      >poços artesianos</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a href="./pages/servicos/servicos.html#mineracao"
+                      >mineração</a
+                    >
+                  </li>
+                  <li class="menu-item">
+                    <a href="./pages/servicos/servicos.html#mais-servicos"
+                      >mais serviços</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="menu-item">
@@ -105,7 +120,9 @@
               class="img-item"
             />
             <h3 class="title-conheca-servico">poços <br />artesianos</h3>
-            <a href="" class="link-conheca-servico"
+            <a
+              href="./pages/servicos/servicos.html#pocos-artesianos"
+              class="link-conheca-servico"
               >Acesse aqui e entenda mais sobre o nosso serviço.</a
             >
           </div>
@@ -118,7 +135,10 @@
               class="img-item"
             />
             <h3 class="title-conheca-servico">mineração</h3>
-            <a href="" class="link-conheca-servico"
+            <br />
+            <a
+              href="./pages/servicos/servicos.html#mineracao"
+              class="link-conheca-servico"
               >Acesse aqui e entenda mais sobre o nosso serviço.</a
             >
           </div>
@@ -131,7 +151,9 @@
               class="img-item"
             />
             <h3 class="title-conheca-servico">mais <br />serviços</h3>
-            <a href="" class="link-conheca-servico"
+            <a
+              href="./pages/servicos/servicos.html#mais-servicos"
+              class="link-conheca-servico"
               >Acesse aqui e entenda mais sobre o nosso serviço.</a
             >
           </div>
@@ -139,56 +161,6 @@
       </div>
     </div>
     <!-- home section start -->
-    <!-- <section class="slider-servicos">
-      <div class="container-slider-service">
-        <button class="arrow-left control" aria-label="Previous image">
-          ◀
-        </button>
-        <button class="arrow-right control" aria-label="Next Image">▶</button>
-        <div class="gallery-wrapper">
-          <div class="gallery">
-            <div class="moldura item">
-              <div class="img-servico">
-                <img
-                  src="./assets/images/home/img-slider.png"
-                  alt=""
-                  class="img-servico"
-                />
-              </div>
-              <h3 class="title-servico">mais serviços</h3>
-              <small>Acesse aqui e entenda mais sobre o nosso serviço. </small>
-            </div>
-            <div class="moldura item current-item">
-              <div class="img-servico">
-                <img
-                  src="./assets/images/home/img-slider.png"
-                  alt=""
-                  class="img-servico"
-                />
-              </div>
-              <h3 class="title-servico">poços artesianos</h3>
-              <small>Acesse aqui e entenda mais sobre o nosso serviço. </small>
-            </div>
-            <div class="moldura item">
-              <div class="img-servico">
-                <img
-                  src="./assets/images/home/img-slider.png"
-                  alt=""
-                  class="img-servico"
-                />
-              </div>
-              <h3 class="title-servico">mineração</h3>
-              <small>Acesse aqui e entenda mais sobre o nosso serviço. </small>
-            </div>
-                  <div class="item current-item cyan"></div>
-            <div class="item deeppink"></div>
-            <div class="item turquoise"></div>
-            <div class="item darkblue"></div>
-            <div class="item purple"></div> 
-          </div>
-        </div>
-      </div>
-    </section> -->
     <div class="clientes">
       <h3 class="title-nossos-clientes">nossos <b> clientes</b></h3>
       <section class="product">
@@ -343,41 +315,9 @@
           animateOut: "fadeOut",
         });
       });
-
-      const controls = document.querySelectorAll(".control");
-      let currentItem = 0;
-      const items = document.querySelectorAll(".item");
-      const maxItems = items.length;
-
-      controls.forEach((control) => {
-        control.addEventListener("click", (e) => {
-          isLeft = e.target.classList.contains("arrow-left");
-
-          if (isLeft) {
-            currentItem -= 1;
-          } else {
-            currentItem += 1;
-          }
-
-          if (currentItem >= maxItems) {
-            currentItem = 0;
-          }
-
-          if (currentItem < 0) {
-            currentItem = maxItems - 1;
-          }
-
-          items.forEach((item) => item.classList.remove("current-item"));
-
-          items[currentItem].scrollIntoView({
-            behavior: "smooth",
-            inline: "center",
-          });
-
-          items[currentItem].classList.add("current-item");
-        });
-      });
     </script>
+
+    <script src="js/slider-simple.js"></script>
     <script src="js/slider-product.js"></script>
   </body>
 </html>

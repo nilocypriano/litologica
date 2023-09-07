@@ -1,4 +1,4 @@
-h3 {
+h3#orcamento-title {
   font-size: 32px !important;
   font-weight: 800 !important;
 }
@@ -163,7 +163,7 @@ span.whatsapp-mob {
 
   h3#orcamento-title {
     font-size: 68px !important;
-    margin-bottom: 7rem;
+    margin-bottom: 5.7rem;
   }
   .wpp-mobile {
     display: none;

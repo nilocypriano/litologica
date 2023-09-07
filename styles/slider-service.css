@@ -4,14 +4,19 @@
 .owl-theme {
   height: 400px !important;
 }
+
 .owl-theme .owl-nav {
   width: 90% !important;
+  height: 20px !important;
   margin: -180px auto 0 auto !important;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
+.owl-theme .owl-nav [class*="owl-"] {
+  height: 20px !important;
+}
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background: none !important;
 }
@@ -19,6 +24,7 @@
 .container-background {
   background-color: #17324b;
   border-radius: 50px 0 0 0;
+  /* margin: 0 auto; */
 }
 
 .moldura {
@@ -31,6 +37,7 @@
 }
 
 a.link-conheca-servico {
+  font-size: 12px;
   text-decoration: none;
   color: #fff;
 }
@@ -50,7 +57,7 @@ h2.title-slider-servico {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   padding: 2rem 0;
   font-size: 20px;
   line-height: 24.38px;
@@ -58,9 +65,13 @@ h2.title-slider-servico {
 h3.title-conheca-servico {
   margin: 1rem 0;
   text-transform: capitalize;
+  font-size: 24px;
   font-weight: 700;
 }
 @media (min-width: 700px) {
+  /* .container-background {
+    max-width: 1280px;
+  } */
   .owl-theme {
     height: 680px !important;
   }
@@ -88,6 +99,7 @@ h3.title-conheca-servico {
   h2.title-slider-servico {
     font-size: 48px;
     padding: 4rem 0;
+    line-height: 58.51px;
   }
 
   h3.title-conheca-servico {

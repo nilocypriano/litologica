@@ -75,7 +75,23 @@
 .nxt-btn {
   right: 0;
 }
+.clientes {
+  width: 100%;
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#title-nossos-clientes {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+}
 @media (min-width: 999px) {
+  #title-nossos-clientes {
+    font-size: 48px;
+  }
   .product {
     width: 1000px;
   }

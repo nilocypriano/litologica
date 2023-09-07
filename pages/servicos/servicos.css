@@ -150,6 +150,7 @@ summary {
 }
 
 details > p {
+  margin-right: 3rem;
   padding: 2rem 0 1rem 2.5rem;
 }
 span {

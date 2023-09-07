@@ -21,6 +21,7 @@ footer > p > strong {
   font-size: 12px;
   color: #fff !important;
   margin: 0;
+  text-decoration: none;
 }
 footer > p > strong {
   font-weight: 700;

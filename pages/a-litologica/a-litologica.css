@@ -22,6 +22,7 @@ figure {
   width: 100%;
   height: auto;
 }
+
 .banner {
   width: 100%;
   overflow: hidden;
@@ -56,7 +57,7 @@ article.compromisso {
 }
 p.compromisso {
   width: 100%;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem 3rem 2rem;
   background-color: #17324b;
   color: #fff;
   border-radius: 50px 0;
@@ -86,7 +87,7 @@ h2 {
   font-weight: 500 !important;
   font-size: 2rem !important;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 1.5rem;
 }
 
 b {
@@ -124,14 +125,12 @@ ul li.local::before {
   margin-left: -3rem; /* Also needed for space (tweak if needed) */
   margin-right: 20px;
 }
-div.integrante {
-  margin: 4rem 0;
-}
+
 section.time {
   width: 264px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 5rem auto;
 }
 .moldura {
   width: 264px;
@@ -190,7 +189,13 @@ p.localidades > br {
 #banner-desktop {
   display: none;
 }
+.box-banner {
+  margin-top: 3rem;
+}
 @media (min-width: 980px) {
+  .integrante-container {
+    margin-bottom: 6rem;
+  }
   #banner-mobile {
     display: none;
   }
