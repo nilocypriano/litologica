@@ -9,6 +9,7 @@
   margin: -180px auto 0 auto !important;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
