@@ -1,7 +1,7 @@
 .img-item {
   width: 189px !important;
   border-radius: 50px 0;
-  max-height: 245px;
+  height: 142px !important;
 }
 .owl-theme {
   height: 400px !important;
@@ -81,6 +81,7 @@ h3.title-conheca-servico {
   }
   .img-item {
     width: 370px !important;
+    height: 245px !important;
   }
 
   .item {
