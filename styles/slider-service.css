@@ -1,12 +1,14 @@
 .img-item {
   width: 189px !important;
+  border-radius: 50px 0;
+  max-height: 245px;
 }
 .owl-theme {
   height: 400px !important;
 }
 
 .owl-theme .owl-nav {
-  width: 90% !important;
+  width: 75% !important;
   height: 20px !important;
   margin: -180px auto 0 auto !important;
   display: flex;
@@ -53,6 +55,7 @@ a.link-conheca-servico {
 .owl-carousel .owl-item img {
   margin: 0 auto;
 }
+
 h2.title-slider-servico {
   color: #fff;
   text-align: center;
@@ -68,6 +71,7 @@ h3.title-conheca-servico {
   font-size: 24px;
   font-weight: 700;
 }
+
 @media (min-width: 700px) {
   /* .container-background {
     max-width: 1280px;

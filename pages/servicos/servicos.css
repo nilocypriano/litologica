@@ -70,7 +70,6 @@ aside {
   padding-left: 30%;
   padding-bottom: 1rem;
 }
-
 summary {
   list-style: none;
 }
@@ -79,6 +78,16 @@ summary::-webkit-details-marker {
   display: none;
 }
 
+ul.mais-servicos {
+  list-style: disc;
+  padding: 1rem 4rem 1rem 2rem;
+  /* list-style-type: circle; */
+}
+
+ul.mais-servicos > li {
+  margin: 1.5rem 2rem 0 1.5rem;
+  font-weight: 500;
+}
 .arrow-down {
   margin: 0.4rem 0.5rem 0 0.5rem;
   width: 100%;
@@ -151,7 +160,7 @@ summary {
 
 details > p {
   margin-right: 3rem;
-  padding: 2rem 0 1rem 2.5rem;
+  padding: 2rem 0 1rem 2rem;
 }
 span {
   font-weight: 500;
@@ -267,7 +276,6 @@ details[open] summary ~ * {
     font-size: 12px;
     font-weight: 700;
     display: block;
-    width: 80%;
   }
 
   .macete {
@@ -368,6 +376,7 @@ details[open] summary ~ * {
     padding-bottom: 0.5rem;
   }
   details > p {
+    margin-right: 1rem;
     font-size: 12px;
     padding: 1rem 0.8rem 0 0.8rem;
   }
