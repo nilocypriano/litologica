@@ -93,7 +93,7 @@ h3.title-conheca-servico {
     width: 462px !important;
     padding: 4rem 3rem;
     font-size: 1rem;
-    height: 580px !important;
+    height: 530px !important;
   }
 
   .owl-theme .owl-nav {
@@ -113,5 +113,9 @@ h3.title-conheca-servico {
 
   .owl-theme .owl-nav {
     margin-top: -280px !important;
+  }
+
+  a.link-conheca-servico {
+    font-size: 16px;
   }
 }
