@@ -282,7 +282,7 @@ h3#small {
 }
 @media screen and (max-width: 768px) {
   .sublevel {
-    padding-left: 2rem;
+    padding-left: 2rem !important;
   }
 
   .link-orcamento {
