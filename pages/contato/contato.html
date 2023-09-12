@@ -49,7 +49,7 @@
                   >Serviços <i class="plus"></i
                 ></a>
                 <ul class="sub-menu">
-                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#pocos-artesianos" class="img-item">poços artesianos</a></li>
+                  <li class="menu-item"><a href="../../pages/servicos/servicos.html#pocos-artesianos" class="img-item">recursos hídricos</a></li>
                   <li class="menu-item"><a href="../../pages/servicos/servicos.html#mineracao" class="img-item">meio ambiente</a></li>
                   <li class="menu-item"><a href="../../pages/servicos/servicos.html#mais-servicos" class="img-item">mais serviços</a></li>
                 </ul>
@@ -69,26 +69,32 @@
 
         <aside class="orcamento">
           <h3 id="orcamento-title">faça o seu orçamento</h3>
+        <a href="https://api.whatsapp.com/send?phone=5521997318684">
+
           <button class="btn-whatsapp wpp-desktop">
             <img src="./../../assets/images/contato/whatsapp.png" alt="" id="img-wpp-desk" />
             <span class="whatsapp-desk">
               ou entre<br>em contato<br>pelo whatsapp
             </span>
           </button>
+          </a>
         </aside>
-        <form action="">
-          <input type="text" placeholder="N O M E" name="" id="" />
+        <form action="https://formsubmit.co/contato@litologica.com" method="POST">
+          <input type="text" placeholder="N O M E" name="" id="" 
+          required/>
           <input
             type="email"
             placeholder="E - M A I L"
             name=""
             id="input-margin"
+            required
           />
           <input
             type="tel"
             placeholder="W H A T S A P P"
             name=""
             id="input-margin"
+            required
           />
           <textarea
             name=""
@@ -96,17 +102,22 @@
             cols="30"
             rows="10"
             style="margin-bottom: 1rem"
+            required
           ></textarea>
+          <input type="hidden" name="_next" value="https://www.litologica.com/">
           <div class="box-btn-enviar">
-            <button class="btn-enviar">enviar</button>
+            <button type="submit" class="btn-enviar">enviar</button>
           </div>
         </form>
+        <a href="https://api.whatsapp.com/send?phone=5521997318684">
+
         <button class="btn-whatsapp wpp-mobile">
           <img src="./../../assets/images/contato/whatsapp.png" alt="" id="img-wpp-mob"/>
           <span class="whatsapp-mob">
             ou entre <br />em contato <br/>diretamente <br />pelo whatsapp
           </span> 
         </button>
+        </a>
       </section>
 
     </div>

@@ -8,14 +8,16 @@
 }
 
 .owl-theme .owl-nav {
-  width: 75% !important;
+  width: 74% !important;
   height: 20px !important;
   margin: -180px auto 0 auto !important;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-
+.owl-theme .owl-nav > button > img {
+  max-height: 40px;
+}
 .owl-theme .owl-nav [class*="owl-"] {
   height: 20px !important;
 }
@@ -93,7 +95,7 @@ h3.title-conheca-servico {
     width: 462px !important;
     padding: 4rem 3rem;
     font-size: 1rem;
-    height: 530px !important;
+    height: 562px !important;
   }
 
   .owl-theme .owl-nav {
@@ -112,9 +114,13 @@ h3.title-conheca-servico {
   }
 
   .owl-theme .owl-nav {
+    width: 75%;
     margin-top: -280px !important;
   }
 
+  .owl-theme .owl-nav > button > img {
+    max-height: 64px;
+  }
   a.link-conheca-servico {
     font-size: 16px;
   }

@@ -73,7 +73,7 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css
                     >Serviços <i class="plus"></i
                   ></a>
                   <ul class="sub-menu">
-                    <li class="menu-item"><a href="#pocos-artesianos">poços artesianos</a></li>
+                    <li class="menu-item"><a href="#pocos-artesianos">recursos hídricos</a></li>
                     <li class="menu-item"><a href="#mineracao">meio ambiente</a></li>
                     <li class="menu-item"><a href="#mais-servicos">mais serviços</a></li>
                   </ul>
@@ -114,10 +114,12 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css
           />
           <aside>
             <article class="product-article">
-              <h2>poços <br>artesianos</h2>
+              <h2>recursos <br>hídricos</h2>
+              <h3 id="small">captação de água, poços Artesianos, rios e nascentes</h3>
+              <p >Especializados em soluções completas para legalização, manutenção e instalação de captações de água.</p>
               <p>
                 A perfuração de <b>poços artesianos</b> é o procedimento mais usado para obtenção de água de qualidade, por depender menos das condições climáticas para manter sua produção constante.
-Em zona rural, também é muito comum a<b>captação superficial de água, advinda de rios e nascentes</b>, onde as chances de contaminação são bem menores, garantindo uma vazão maior de água de boa qualidade.
+Em zona rural, também é muito comum a <b>captação superficial de água, advinda de rios e nascentes</b>, onde as chances de contaminação são bem menores, garantindo uma vazão maior de água de boa qualidade.
               </p>
               <p>
                 Para qualquer tipo de captação de água, seja ela subterrânea ou superficial, é necessário cumprir os trâmites técnicos aplicáveis e registrar a atividade junto ao órgão estadual.
@@ -310,6 +312,9 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
             <article class="article-reverse product-article">
               <h2>MEIO AMBIENTE E PASSIVO AMBIENTAL</h2>
               <p>
+                Excelência em estudos de identificação de passivo ambiental, licenciamento ambiental municipal, estadual e federal, incluindo interação com órgãos competentes.
+              </p>
+              <p>
                 Atuamos em <b>todas as fases do licenciamento</b> desde a elaboração da documentação técnica ao acompanhamento do processo ao posterior atendimento das condicionantes das licenças, além elaboramos diversos estudos ambientais voltados para identificação e mitigação de impactos ambientais.
               </p>
 
@@ -317,6 +322,9 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
                 Providenciamos também <b>PGRS (Plano de Gerenciamento de Resíduos Sólidos)  e AVCB (Auto de Vistoria do Corpo de Bombeiros)</b>  para todos os empreendimentos do Estado do Rio de Janeiro.
               </p>
               
+              <p>
+                Nos municípios do Estado do Rio de Janeiro, a prefeitura é a principal responsável pela regulação de atividades e empreendimentos comerciais no âmbito ambiental, representada por sua secretaria de meio ambiente.
+              </p>
               <span style="font-weight: bold">Nossos serviços:</span>
             </article>
             <div class="dropdown">
@@ -329,7 +337,7 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
                       justify-content: space-between;
                     "
                   >
-                    Licenciamentos
+                    Licenças ambientais
                   </div>
                   <img
                     src="./img/arrow-down.png"
@@ -621,6 +629,8 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
       <section class="contato">
         <aside class="orcamento">
           <h3 id="orcamento-title">faça o seu orçamento</h3>
+        <a href="https://api.whatsapp.com/send?phone=5521997318684">
+
           <button class="btn-whatsapp wpp-desktop">
             <img
               src="../../assets/images/contato/whatsapp.png"
@@ -631,20 +641,23 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
               ou entre<br />em contato<br />pelo whatsapp
             </span>
           </button>
+          </a>
         </aside>
-        <form action="">
-          <input type="text" placeholder="N O M E" name="" id="" />
+        <form action="https://formsubmit.co/contato@litologica.com" method="POST">
+          <input type="text" placeholder="N O M E" name="" id="" required />
           <input
             type="email"
             placeholder="E - M A I L"
             name=""
             id="input-margin"
+            required
           />
           <input
             type="tel"
             placeholder="W H A T S A P P"
             name=""
             id="input-margin"
+            required
           />
           <textarea
             name=""
@@ -652,13 +665,18 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
             cols="30"
             rows="10"
             style="margin-bottom: 1rem"
+            required
           ></textarea>
+          <input type="hidden" name="_next" value="https://www.litologica.com/">
+
           <div
             class="box-btn-enviar"
           >
-            <button class="btn-enviar">enviar</button>
+            <button type="submit" class="btn-enviar">enviar</button>
           </div>
         </form>
+        <a href="https://api.whatsapp.com/send?phone=5521997318684">
+
         <button class="btn-whatsapp wpp-mobile">
           <img
             src="../../assets/images/contato/whatsapp.png"
@@ -669,6 +687,7 @@ O usuário que não atende a essa determinação, não está em dia com suas obr
             ou entre <br />em contato <br />diretamente <br />pelo whatsapp
           </span>
         </button>
+        </a>
       </section>
     </div>
     <footer>
