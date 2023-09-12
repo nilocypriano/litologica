@@ -394,6 +394,16 @@ h3#small {
     font-size: 12px;
     padding: 1rem 0.8rem 0 0.8rem;
   }
+  ul.mais-servicos {
+    list-style: disc;
+    padding: 1rem 1rem 1rem 2rem;
+    /* list-style-type: circle; */
+  }
+
+  ul.mais-servicos > li {
+    margin: 1.5rem 0 0 0;
+    font-weight: 500;
+  }
 
   .formulario {
     flex-direction: column;
