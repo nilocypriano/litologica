@@ -20,7 +20,7 @@ h1 {
 aside > .product-article > h2 {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 36px;
   margin: 0 0 1rem 0;
 }
 .banner {
@@ -55,6 +55,7 @@ p.banner-description {
   width: 256px;
   font-size: 18px;
 }
+
 .product-article {
   width: 60%;
 }
@@ -317,7 +318,7 @@ h3#small {
   }
 
   aside > .product-article > h2 {
-    font-size: 28px;
+    font-size: 22px;
     margin: 1rem auto;
   }
 
