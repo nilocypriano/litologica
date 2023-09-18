@@ -44,6 +44,7 @@ img.mobile-fixed-whatsapp-logo {
   max-height: 90px;
   position: fixed;
   right: 5px;
+  z-index: 1000000;
 }
 /* desktop */
 /* 
